@@ -29,7 +29,6 @@ public class FixText {
 			if (joblisting.getIsDownloaded()) {
 				int listing_id = joblisting.getId();
 				try {
-					System.out.println();
 					for (ClustersPagination item : joblisting.getClustersPaginations()) {
 						System.err.println(item.getJobListingClusters().getClusterName());
 						if (ttt.containsKey(item.getJobListingClusters().getClusterName())) {
